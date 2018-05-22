@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+
+    <meta name='description' content='Logint for project VI' />
+		<meta name='robots' content='index follow' /> <!-- want page and links to be indexed -->
+		<meta http-equiv='author' content='Michael' />
+		<meta http-equiv='pragma' content='no-cache' /> <!-- force browser to reload page every time - updates often -->
+
+		<link href='../css/styles.css' type='text/css' rel='stylesheet' />
+
+  </head>
+  <body>
+    <form action='../php/login.php' method='post' id='login'>
+      <h1>Please log in</h1>
+      <p>
+        <label>Username: <input type='text' name='username' required /></label>
+      </p>
+      <p>
+        <label>Password: <input type='password' name='password' required /></label>
+      </p>
+      <input type='submit' value='Log in'/>
+    </form>
+    <a href="index.html">Back to index</a>
+
+    <p id='copyright'>
+      Copyright &copy Michael Galle
+    </p>
+
+  </body>
+</html>
