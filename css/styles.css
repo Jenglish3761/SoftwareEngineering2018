@@ -1,3 +1,82 @@
+body {
+  font-family:Georgia,serif;
+}
+
+figcaption {
+  display: block;
+  margin-left: 20px;
+  text-align: justified;
+  font-style: italic;
+  font-size: 90%;
+}
+
+img {
+  height: 150px;
+  display: block;      /* introduced later - Need to make it a block level element to centre it */
+  margin-left: 20px;  /* introduced later */
+}
+
+/* Classes */
 .important {
   color:blue;
+}
+
+li.h_menu {         /* Convert menu links from vertical (block level) to horizontal (horizontal menu) */
+  display: inline;
+  margin: 10px 20px 10px 20px;
+}
+
+textarea {
+  display:block;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  display:block;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Pseudo-classes */
+/* ************************************************ */
+
+/* Horizontal menu */
+a:link.menu, a:visited.menu {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+
+a:hover.menu {
+  font-weight: 900;
+}
+a:active.menu {
+  font-weight: 900;
+  color: orange;
+}
+
+/* Forms */
+input.submit {
+  background-color: blue;
+  color: white;
+}
+
+input.submit:hover {
+  background-color: white;
+  color:blue;
+}
+
+input.submit:active {
+  color:orange;
+}
+
+input.text, textarea.text {
+  color:gray;
+}
+
+input.text:focus, textarea.text:focus {
+  color:black;
 }
