@@ -2,21 +2,38 @@
 <html>
 	<head>
 		<title>Project VI - Home Page (Under Construction)</title>
+		<meta name='description' content='Home page for project VI' />
+		<meta name='robots' content='index follow' /> <!-- want page and links to be indexed -->
+		<meta http-equiv='author' content='Michael' />
+		<meta http-equiv='pragma' content='no-cache' /> <!-- force browser to reload page every time - updates often -->
+
+		<link href='../css/styles.css' type='text/css' rel='stylesheet' />
 	</head>
 	<body>
-		<h1>Menu</h1>
-		<!-- This is an html comment -->
-		<ul>
-			<li><a href="about.html">About</a></li>
-			<li><a href="Project_Plan.html">Project Plan</a></li>
-			<li><a href="Log_Book_Michael.html">Log Books</a></li>
-			<li><a href="#">Documents (under construction)</a></li>
-			<li><a href="#">Videos (under construction)</a></li>
-			<li><a href="loginPage.html">Login</a></li>
-			<li><a href="requestAccess.html">Request Access</a></li>
-		</ul>
+
+		<div id='header'>
+			<h1>Menu</h1>
+			<!-- This is an html comment -->
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="Project_Plan.html">Project Plan</a></li>
+				<li><a href="Log_Book_Michael.html">Log Books</a></li>
+				<li><a href="#">Documents (under construction)</a></li>
+				<li><a href="about.html#videos">Videos</a></li>
+				<li><a href="loginPage.html">Login</a></li>
+				<li><a href="requestAccess.html">Request Access</a></li>
+			</ul>
+		</div>
+
 		<h1>Project VI - Home Page</h1>
 		<p>Welcome to the Project VI home page</p>
+		<p>
+			This is a <span class='important'>very important</span> point that should be made
+		</p>
+
+		<p id='copyright'>
+			Copyright &copy Michael Galle
+		</p>
 
 	</body>
 </html>
