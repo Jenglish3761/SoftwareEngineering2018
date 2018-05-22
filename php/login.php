@@ -14,12 +14,11 @@
     </p>
     <ul>
       <li>
-        User name: <?php echo $_POST['username']; ?>
+        First name: <?php echo $_POST['firstname']; ?>
       </li>
       <li>
         Password: <?php echo $_POST['password']; ?>
       </li>
-
     </ul>
   </body>
 </html>

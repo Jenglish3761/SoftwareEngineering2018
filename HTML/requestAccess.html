@@ -5,7 +5,7 @@
   </head>
   <body>
     <h1>Request Access</h1>
-    <form action='../php/accessRequest.php' method='post' id='requestAccess'>
+    <form action='../php/requestAccess.php' method='post' id='requestAccess'>
 
       <!-- Group basic info into a field with a legend -->
       <fieldset>
@@ -13,8 +13,8 @@
           Contact Details
         </legend>
         <!-- Basic info -->
-        <p><label>First Name: <input type='text' name='firstName' required/></label></p>
-        <p><label>Last Name: <input type='text' name='lastName' required/></label></p>
+        <p><label>First Name: <input type='text' name='firstname' required/></label></p>
+        <p><label>Last Name: <input type='text' name='lastname' required/></label></p>
         <p><label>Email: <input type='email' name='email' /></label></p>
         <p><label>Website: <input type='url' name='url' /></label></p>
         <p><label>Birthdate: <input type='date' name='birthday' /></label></p>
@@ -33,11 +33,11 @@
         </legend>
         <!-- Checkbox -->
         <p>Please check all that apply</p>
-        <label><input type='checkbox' name='involvement' value='none'  />I am not involved in Project VI </label><br />
-        <label><input type='checkbox' name='involvement' value='instructor'  />I am an instructor in Project VI </label><br />
-        <label><input type='checkbox' name='involvement' value='otherInstructor'  />I am an instructor in another Project/College </label><br />
-        <label><input type='checkbox' name='involvement' value='student'  />I am an student in Project VI </label><br />
-        <label><input type='checkbox' name='involvement' value='industry'  />I am a member of industry, interested in this project </label><br />
+        <label><input type='checkbox' name='involvement[]' value='none'  />I am not involved in Project VI </label><br />
+        <label><input type='checkbox' name='involvement[]' value='instructor'  />I am an instructor in Project VI </label><br />
+        <label><input type='checkbox' name='involvement[]' value='otherInstructor'  />I am an instructor in another Project/College </label><br />
+        <label><input type='checkbox' name='involvement[]' value='student'  />I am an student in Project VI </label><br />
+        <label><input type='checkbox' name='involvement[]' value='industry'  />I am a member of industry, interested in this project </label><br />
 
         <!-- Drop down list / 'select' box -->
         <p>Do you drive a car? </p>
@@ -52,8 +52,6 @@
         <textarea>
           About me ...
         </textarea>
-
-
       </fieldset>
 
       <!-- Submit button -->
